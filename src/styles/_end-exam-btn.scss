@@ -1,0 +1,11 @@
+/*End Exam Btn*/
+.end-exam-btn {
+	padding: 14px 10.2px 13px 10px;
+	border-radius: 5px;
+	background-color: #ef2a2a;
+	color: #fff;
+	transition: 250ms;
+	&:hover {
+		opacity: 0.85;
+	}
+}

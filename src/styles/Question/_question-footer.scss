@@ -1,0 +1,30 @@
+/*Question Footer*/
+.question-footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 50px;
+	padding: 0 5px;
+	.question-footer-btn {
+		padding: 12px 15px;
+		border-radius: 4px;
+		font-size: 1.1rem;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		transition: 250ms;
+		&.prev-btn {
+			background-color: #f1f1f1;
+			color: $main-color;
+			&:hover {
+				opacity: 0.85;
+			}
+		}
+		&.next-btn {
+			background-color: $main-color;
+			color: #fff;
+			&:hover {
+				background-color: #2291c0;
+			}
+		}
+	}
+}

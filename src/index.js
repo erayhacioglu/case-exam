@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import './styles/main.scss';
+
+//context
+import { TimerProvider } from './context/TimerContext';
+import { QuestionProvider } from './context/QuestionContext';
+import { CustomerProvider } from './context/CustomerContext';
+import { AnswerProvider } from './context/AnswerContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<TimerProvider>
+		<QuestionProvider>
+			<CustomerProvider>
+				<AnswerProvider>
+					<App />
+				</AnswerProvider>
+			</CustomerProvider>
+		</QuestionProvider>
+	</TimerProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

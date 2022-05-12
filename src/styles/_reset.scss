@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+html {
+	font-size: 15px;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+	background-color: #fff;
+	color: #000;
+}
+button {
+	cursor: pointer;
+	background-color: none;
+	border: none;
+	outline: none;
+}
+.container {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
